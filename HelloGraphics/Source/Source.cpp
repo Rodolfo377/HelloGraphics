@@ -77,16 +77,14 @@ int main()
 
 		float vertices[] =
 		{
-			0.5f, 0.5f, 0.0f,
+			0.0f, 0.5f, 0.0f,
 			0.5f, -0.5f, 0.0f,
 			-0.5f,  -0.5f, 0.0f,
-			-0.5f, 0.5f, 0.0f
 		};
 
 		unsigned int indices[] =
 		{
 			0, 1, 3,
-			1, 2, 3
 		};
 		//..::Initialization code
 
@@ -129,7 +127,7 @@ int main()
 			//2. use our shader program when we want to render an object
 			glUseProgram(shaderProgram);
 			glBindVertexArray(VAO);
-			glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+			glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
 			glBindVertexArray(0);
 
 
